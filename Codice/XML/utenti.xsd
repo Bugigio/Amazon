@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="registro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="account" type="tipo_account" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tipo_account">
+        <xs:sequence>
+            <xs:element name="user" type="xs:string"/>
+            <xs:element name="pasw" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
