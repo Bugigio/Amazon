@@ -30,8 +30,7 @@
                 $_SESSION['passwErr']++; // tentativi falliti incrementati
                 if($_SESSION['passwErr'] >= 3) {
                     // Password sbagliata, cambia password
-                    session_destroy(); // reset session
-                    header("location: login.php?err=6");
+                    header("location: login.php?err=6&user=$utente");
                     die();
                 } else {
                     // Password sbagliata

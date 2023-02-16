@@ -23,7 +23,7 @@
                     echo "Password errata";
                     break;
                 case 6:
-                    echo "Password errata, <a href='cambiaPassword.php'>Cambia password</a>";
+                    echo 'Password errata, <a href="cambiaPassword.php?user=' . $_REQUEST['user'] . '">Cambia password</a>';
                     break;
                 default:
                     echo "Errore generico";
