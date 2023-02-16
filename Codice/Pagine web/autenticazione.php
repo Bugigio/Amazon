@@ -11,7 +11,7 @@
     } 
 
     $doc = new DOMDocument();
-    $doc->load('utenti.xml');// use the actual file path. Absolute or relative
+    $doc->load('../XML/utenti.xml');// use the actual file path. Absolute or relative
 
     $utenti = $doc->getElementsByTagName('account'); // $utenti = {[Account][Account][Account][Account][...][Account]}
     foreach ($utenti as $u) { //$u [Account] -> $u [[user][pasw]]
