@@ -53,7 +53,6 @@
     }
     $dom->save($nome_file);
 
-
     header('Location: registrati.php');
     die();
 

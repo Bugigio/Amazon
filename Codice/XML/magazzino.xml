@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<magazzino>
+    <libri>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+        </prodotto>
+    </libri>
+    <tecnologia>
+
+    </tecnologia>
+    <film>
+
+    </film>
+    <vestiti>
+
+    </vestiti>
+    <sport>
+        
+    </sport>
+</magazzino>
