@@ -11,14 +11,20 @@
                     echo "Errore di accesso";
                     break;
                 case 2:
-                    echo "Credenziali errate";
+                    echo "Utente inesistente, vuoi registrarti? <a href=registrati.php>Registrati</a>";
                     break;
                 case 3:
                     echo "Utente creato";
                     break;  
                 case 4:
                     echo "File utenti inesistente";
-                    break;              
+                    break;
+                case 5:
+                    echo "Password errata";
+                    break;
+                case 6:
+                    echo "Password errata, <a href='cambiaPassword.php'>Cambia password</a>";
+                    break;
                 default:
                     echo "Errore generico";
                     break;
