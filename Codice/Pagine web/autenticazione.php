@@ -4,7 +4,7 @@
     $password = $_REQUEST['password'];
 
     //controllo se l'utente esiste
-    $nome_file = "utenti.xml";
+    $nome_file = "../XML/utenti.xml";
     if(!file_exists($nome_file)){
         header("location: login.php?err=4");
         die();
