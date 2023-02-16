@@ -24,6 +24,16 @@
         $dom->load($nome_file);
     } 
 
+    // codice di verifica utente già esistente
+    $utenti = $dom->getElementsByTagName('account');
+    foreach($utenti as $u) {
+        $user = $u->getElementsByTagName('user')->item(0)->nodeValue;
+        if($user ==  $utente) {
+            header("location: registrati.php?err=1");
+            die();
+        }
+    } 
+
     //creazione nuovo utente
     $account = $dom->createElement('account');
     $user = $dom->createElement('user', $utente);

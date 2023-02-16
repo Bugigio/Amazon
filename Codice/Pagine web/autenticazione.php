@@ -18,7 +18,7 @@
         $user = $u->getElementsByTagName('user')->item(0)->nodeValue; //$user = {[user]->contenuto}
         $pasw = $u->getElementsByTagName('pasw')->item(0)->nodeValue; //$pasw = {[pasw]->contenuto}
         if($utente == $user && $password == $pasw){
-            header("location: accesso.php?user=$user");
+            header("location: shop.php?user=$user");
             die();
         }
     }

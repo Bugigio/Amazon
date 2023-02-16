@@ -4,6 +4,21 @@
         <link rel=stylesheet href="../Stili/style.css"></style>
     </head>
     <body>
+        <?php
+            if(isset($_REQUEST['err'])) {
+                $err = $_REQUEST['err'];
+                echo "<div class='err'>";
+                switch ($err) {
+                    case 1:
+                        echo 'Errore, utente già esistente';
+                        break;
+                    default:
+                        echo 'Errore generico';
+                        break;
+                }
+                echo '</div>';
+            }
+        ?>
         <form name=registrati action=registrazione.php method=post>
             <h1>Registrazione</h1>
             <input type=text name=user placeholder="Nome utente" required/>
