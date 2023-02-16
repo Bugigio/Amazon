@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<registro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="utenti.xsd">
+<registro>
   <account>
-    <user>pippo</user>
-    <pasw>franco</pasw>
-  </account>
-  <account>
-    <user>uno</user>
-    <pasw>paswuno</pasw>
-  </account>
-  <account>
-    <user>due</user>
-    <pasw>paswdue</pasw>
+    <user>ciao</user>
+    <pasw>ciao</pasw>
   </account>
 </registro>
