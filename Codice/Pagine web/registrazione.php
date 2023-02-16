@@ -10,7 +10,7 @@
     $password = $_REQUEST['password'];
 
     //definisco parametri xml
-    $nome_file = "utenti.xml"; //percorso del file
+    $nome_file = "../XML/utenti.xml"; //percorso del file
     $dom = new DOMDocument(); //oggeto di classe DOMDocument per usare i metodi utili all'XML
     
     //intestazine xml

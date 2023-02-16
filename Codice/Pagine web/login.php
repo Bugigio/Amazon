@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Login con i file</title>
-        <link rel=stylesheet href=style.css></style>
+        <link rel=stylesheet href="../Stili/style.css"></style>
     </head>
     <body>
         <?php if(isSet($_REQUEST['err'])) {
