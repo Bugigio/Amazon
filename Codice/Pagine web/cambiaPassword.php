@@ -28,8 +28,8 @@
         <form action="cambiare.php" method="post">
             <h1>Cambia password</h1>
             <input type="text" name="user" placeholder="Nome utente" value="<?php echo $_GET['user'];?>" required>
-            <input type="text" name="passwordNuova" placeholder="Nuova password">
-            <input type="password" name="confermaPassword" placeholder="Conferma password">
+            <input type="text" name="passwordNuova" placeholder="Nuova password" required>
+            <input type="password" name="confermaPassword" placeholder="Conferma password" required>
             <input type="submit" name="submit" value="Conferma">
         </form>
     </body>
