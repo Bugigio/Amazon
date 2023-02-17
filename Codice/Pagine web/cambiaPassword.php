@@ -12,6 +12,18 @@
             if(!isset($_GET['user'])) {
                 header("location: login.php");
             }
+            if(isset($_REQUEST['err'])) {
+                echo "<div class=err>";
+                switch ($_REQUEST['err']) {
+                    case 1:
+                        echo 'Utente non trovato';
+                        break;
+                    case 2:
+                        echo 'Le password non combaciano';
+                        break;
+                }
+                echo "</div>";
+            }
         ?>
         <form action="cambiare.php" method="post">
             <h1>Cambia password</h1>
