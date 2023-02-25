@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <registro>
   <account>
-    <user>ciccio</user>
-    <pasw>ciccio</pasw>
+    <user>admin</user>
+    <pasw>admin</pasw>
   </account>
 </registro>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<utente>
+  <dati>
+    <nome>admin</nome>
+    <password>admin</password>
+    <saldo>0</saldo>
+  </dati>
+  <ordini>
+    <libri> </libri>
+    <tecnologia> </tecnologia>
+    <film> </film>
+    <vestiti> </vestiti>
+    <sport> </sport>
+  </ordini>
+</utente>
