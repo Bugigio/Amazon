@@ -79,9 +79,17 @@ a {
     background-color: #333333;
     padding: 0%;
     width: 100%;
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     margin-top: auto;
+}
+
+.ordina {
+    width: 250px;
+    height: 100px;
+    border-radius: 25px;
 }
 
 /*div {
