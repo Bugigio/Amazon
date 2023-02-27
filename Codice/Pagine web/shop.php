@@ -24,9 +24,9 @@
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
                 <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
-                    <div>
+                    <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(0)">+</button>
-                        <div class="numero_quantita">0</div>
+                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
                         <button class="bottone" onclick="diminuisci(0)">-</button>
                     </div>
                 </div>
@@ -35,9 +35,9 @@
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
                 <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
-                    <div>
+                    <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(1)">+</button>
-                        <div class="numero_quantita">0</div>
+                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
                         <button class="bottone" onclick="diminuisci(1)">-</button>
                     </div>
                 </div>
@@ -46,9 +46,9 @@
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
                 <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
-                    <div>
+                    <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(2)">+</button>
-                        <div class="numero_quantita">0</div>
+                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
                         <button class="bottone" onclick="diminuisci(2)">-</button>
                     </div>
                 </div>
@@ -57,9 +57,9 @@
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
                 <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
-                    <div>
+                    <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(3)">+</button>
-                        <div class="numero_quantita">0</div>
+                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
                         <button class="bottone" onclick="diminuisci(3)">-</button>
                     </div>
                 </div>
@@ -68,9 +68,9 @@
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
                 <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
-                    <div>
+                    <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(4)">+</button>
-                        <div class="numero_quantita">0</div>
+                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
                         <button class="bottone" onclick="diminuisci(4)">-</button>
                     </div>
                 </div>
