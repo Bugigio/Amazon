@@ -29,110 +29,110 @@
     </libri>
     <tecnologia>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Tasteira intel pro Max</nome>
+            <prezzo>22.00</prezzo>
+            <quantita>5</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Monitor Samsung 25 pollici</nome>
+            <prezzo>40.99</prezzo>
+            <quantita>7</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Mouse pro gaming</nome>
+            <prezzo>15.75</prezzo>
+            <quantita>8</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Hard disk (2Tb)</nome>
+            <prezzo>135.00</prezzo>
+            <quantita>5</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Webcam cinema</nome>
+            <prezzo>45.65</prezzo>
+            <quantita>9</quantita>
         </prodotto>
     </tecnologia>
     <film>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Il signore degli anelli</nome>
+            <prezzo>13.13</prezzo>
+            <quantita>9</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Dragon ball Gt: il ritorno di Gogeta</nome>
+            <prezzo>27.99</prezzo>
+            <quantita>12</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Barbie e i lavori da donna</nome>
+            <prezzo>5.69</prezzo>
+            <quantita>8</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Transformers 6: l'errore della matirce</nome>
+            <prezzo>29.56</prezzo>
+            <quantita>20</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Shrek 6: l'onnipotente</nome>
+            <prezzo>50</prezzo>
+            <quantita>99</quantita>
         </prodotto>
     </film>
     <vestiti>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>t-shirt Gucci</nome>
+            <prezzo>38.35</prezzo>
+            <quantita>9</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Gonna Prada a fiori</nome>
+            <prezzo>40.00</prezzo>
+            <quantita>7</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Tuta da militare corazzata antiproiettile</nome>
+            <prezzo>200-35</prezzo>
+            <quantita>13</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Cappello disel</nome>
+            <prezzo>14.89</prezzo>
+            <quantita>8</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Occhiali future max</nome>
+            <prezzo>30.23</prezzo>
+            <quantita>6</quantita>
         </prodotto>
     </vestiti>
     <sport>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Scarpe basket</nome>
+            <prezzo>12.78</prezzo>
+            <quantita>6</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Pallone basket nike</nome>
+            <prezzo>23.98</prezzo>
+            <quantita>9</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>Canotta sportiva adidas</nome>
+            <prezzo>34.89</prezzo>
+            <quantita>12</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>pantaloncini</nome>
+            <prezzo>34.87</prezzo>
+            <quantita>21</quantita>
         </prodotto>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
-            <quantita></quantita>
+            <nome>fascetta sportiva puma</nome>
+            <prezzo>10.99</prezzo>
+            <quantita>30</quantita>
         </prodotto>        
     </sport>
 </magazzino>
