@@ -2,20 +2,137 @@
 <magazzino>
     <libri>
         <prodotto>
-            <nome></nome>
-            <prezzo></prezzo>
+            <nome>Una vita di arbucci</nome>
+            <prezzo>12.90</prezzo>
+            <quantita>7</quantita>
+        </prodotto>
+        <prodotto>
+            <nome>Linguaggi di programmazione</nome>
+            <prezzo>15.30</prezzo>
+            <quantita>4</quantita>
+        </prodotto>
+        <prodotto>
+            <nome>Idee per il business</nome>
+            <prezzo>17.25</prezzo>
+            <quantita>3</quantita>
+        </prodotto>
+        <prodotto>
+            <nome>Minecraft: guida</nome>
+            <prezzo>11.50</prezzo>
+            <quantita>9</quantita>
+        </prodotto>
+        <prodotto>
+            <nome>La caduta di Amazon</nome>
+            <prezzo>18.99</prezzo>
+            <quantita>6</quantita>
         </prodotto>
     </libri>
     <tecnologia>
-
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
     </tecnologia>
     <film>
-
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
     </film>
     <vestiti>
-        
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
     </vestiti>
     <sport>
-        
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>
+        <prodotto>
+            <nome></nome>
+            <prezzo></prezzo>
+            <quantita></quantita>
+        </prodotto>        
     </sport>
 </magazzino>

@@ -77,7 +77,7 @@
             </div>
         </div>
         <footer>
-            <div class="footer"><a href="login.php"><button class="ordina">ORDINA</button></a></div>
+            <div class="footer"><a href="login.php"><button class="ordina"><h2>ORDINA</h2></button></a></div>
         </footer>
     </body>
 </html>
