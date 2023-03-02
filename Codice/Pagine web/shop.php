@@ -13,15 +13,19 @@
         <link rel="stylesheet" href="../Stili/shop.css">
         <script src="shop.js"></script>
         <?php
-            session_start();
-            $doc = new DOMDocument();
-            $doc->load('../XML/magazzino.xml');
+            if(isset($_REQUEST['user'])) {
+                $doc = new DOMDocument();
+                $doc->load('../XML/magazzino.xml');
+                $prodotti = $doc->getElementsByTagName("prodotto");
+            } else {
+                header('location: login.php?err=1');
+            }
         ?>
     </head>
     <body style="margin: 0px;">
         <header>
             <div class="header">
-                <div class="sezione"><a href="#">LIBRI</a></div><div class="sezione"><a href="#">TECNOLOGIA</a></div><div class="sezione"><a href="#">FILM</a></div><div class="sezione"><a href="#">VESTITI</a></div><div class="sezione"><a href="#">SPORT</a></div><div id="pulsante_account"><a href="account.php">ACCOUNT</a></div>
+                <div class="sezione"><a href="#">LIBRI</a></div><div class="sezione"><a href="tecnologia.php?user=<?php echo $_GET['user']; ?>&categoria=tecnologia">TECNOLOGIA</a></div><div class="sezione"><a href="film.php?user=<?php echo $_GET['user']; ?>&categoria=film"">FILM</a></div><div class="sezione"><a href="vestiti.php?user=<?php echo $_GET['user']; ?>&categoria=vestiti">VESTITI</a></div><div class="sezione"><a href="sport.php?user=<?php echo $_GET['user']; ?>&categoria=sport">SPORT</a></div><div id="pulsante_account"><a href="account.php?user=<?php echo $_GET['user'];?>">ACCOUNT</a></div>
             </div>
         </header>
         <div class="container">
