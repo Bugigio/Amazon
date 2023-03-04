@@ -24,7 +24,7 @@
         $pasw = $u->getElementsByTagName('pasw')->item(0)->nodeValue; //$pasw = {[pasw]->contenuto}
         if($utente == $user) {
             if($password == $pasw) {
-                header("location: shop.php?user=$user");
+                header("location: account.php?user=$user");
                 die();
             } else {
                 $_SESSION['passwErr']++; // tentativi falliti incrementati

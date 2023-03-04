@@ -10,7 +10,7 @@
     <body style="margin: 0px;">
         <header>
             <div class="header">
-                <div class="sezione"><a href="#">LIBRI</a></div><div class="sezione"><a href="#">TECNOLOGIA</a></div><div class="sezione"><a href="#">FILM</a></div><div class="sezione"><a href="#">VESTITI</a></div><div class="sezione"><a href="#">SPORT</a></div><div id="pulsante_account"><a href="account.php">ACCOUNT</a></div>
+                <div class="sezione"><a href="shop.php?user=<?php echo $_REQUEST['user']; ?>&categoria=libri">LIBRI</a></div><div class="sezione"><a href="#">TECNOLOGIA</a></div><div class="sezione"><a href="#">FILM</a></div><div class="sezione"><a href="#">VESTITI</a></div><div class="sezione"><a href="#">SPORT</a></div><div id="pulsante_account"><a href="account.php">ACCOUNT</a></div>
             </div>
         </header>
         <div class="account_container">

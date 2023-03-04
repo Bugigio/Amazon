@@ -14,9 +14,25 @@
         <script src="shop.js"></script>
         <?php
             if(isset($_REQUEST['user'])) {
+                $categoria = "";
+                if(isset($_REQUEST['categoria'])) {
+                    $categoria = $_REQUEST['categoria'];
+                } else {
+                    header("location: login.php?err=1");
+                    die();
+                }
                 $doc = new DOMDocument();
                 $doc->load('../XML/magazzino.xml');
-                $prodotti = $doc->getElementsByTagName("prodotto");
+                $tagCategoria = $doc->getElementsByTagName($categoria);
+                foreach($tagCategoria as $t) {
+                    $prodotti = $t->getElementsByTagName("prodotto");
+                    foreach($prodotti as $p) {
+                        $nome = $p->getElementsByTagName("nome")->item(0)->nodeValue;
+                        $prezzo = $p->getElementsByTagName("prezzo")->item(0)->nodeValue;
+                    }
+                    break;
+                }
+                
             } else {
                 header('location: login.php?err=1');
             }
@@ -31,7 +47,7 @@
         <div class="container">
             <div class="articolo">
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
-                <div class="descrizione_articolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
+                <div class="descrizione_articolo"><h3><?php ?></h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero. Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor. Donec consequat diam vitae nisl sagittis, in mollis ante varius. Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor. Integer rhoncus dolor ut ante hendrerit feugiat.</div>
                 <div class="quantita_acquisto_articolo">
                     <div class="box_quantita">
                         <button class="bottone" onclick="aumenta(0)">+</button>
