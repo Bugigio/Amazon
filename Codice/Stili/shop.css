@@ -1,32 +1,115 @@
-#header {
+.header {
     background-color: #333333;
     padding: 0%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
-.menu {
-    width: 100%;
+.immagine_articolo {
+    width: 156px;
+    height: 156px;
+    border: 1px solid black;
+    margin: 5px;
+    
 }
-.immagine {
-    width: 25%;
+.descrizione_articolo {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    flex: 1;
 }
-.descrizione {
-    width: 50%;
+.quantita_acquisto_articolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
 }
-.quantita_acquisto {
-    width: 25%;
+.numero_quantita {
     text-align: center;
+    width: 100%;
 }
 .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
-}
-div {
-    border: 2px solid black;
+    box-sizing: border-box;
+    position: relative;
 }
 .articolo {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: auto;
 }
 img {
-    width: 128px;
-    height: 128px;
+    width: 156px;
+    height: 156px;
 }
+.bottone {
+    width: 100%;
+}
+.sezione {
+    width: auto;
+    padding: 10px;
+}
+.sezione:hover {
+    background-color: #242424;
+}
+#pulsante_account {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px;
+}
+#pulsante_account:hover {
+    background-color: #242424;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #333333;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+}
+.box_quantita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+}
+
+.ordina {
+    width: 250px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.titolo {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.prezzo_articolo {
+    margin-top: 10px;
+    border: 0px;
+    width: 60px;
+}
+
+
+/* div {
+    border: 2px solid black;
+} */
