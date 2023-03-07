@@ -2,6 +2,11 @@
 <magazzino>
     <libri>
         <prodotto>
+            <nome>La vita di Arbucci</nome>
+            <prezzo>11.69</prezzo>
+            <quantita>12</quantita>
+        </prodotto>
+        <prodotto>
             <nome>Linguaggi di programmazione</nome>
             <prezzo>15.30</prezzo>
             <quantita>4</quantita>
