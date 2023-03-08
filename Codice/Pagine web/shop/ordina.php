@@ -2,10 +2,11 @@
     if(isset($_REQUEST['user']) && isset($_POST['submit'])) {
         print_r($_POST);
         $magazzino = new DOMDocument();
-        $magazzino->load("../XML/magazzino.xml");
+        $magazzino->load("../../XML/magazzino.xml");
         $usernameXML = new DOMDocument();
-        $usernameXML->load($_REQUEST['user'] . ".xml");
+        $usernameXML->load("../../XML/utenti/" . $_REQUEST['user'] . ".xml");
         // verifica saldo disponibile
+        echo $usernameXML->getElementsByTagName("saldo")->item(0)->nodeValue;
         if($usernameXML->getElementsByTagName("saldo")->item(0)->nodeValue < $_REQUEST['prezzo_totale']) {
             header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=". $_REQUEST['categoria'] . "&err=1");
             die();
@@ -17,21 +18,22 @@
             foreach($prodotto as $p) { // scorro i prodotti della categoria
                 $quantita = $p->getElementsByTagName("quantita")->item(0)->nodeValue; // quantita del prodotto $indice_prodotto
                 if($_REQUEST["quantita_articolo$indice_prodotto"] > 0) {
-                    if($_REQUEST["quantita_articolo$indice_prodotto"] > $quantita) {
-                        header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=". $_REQUEST['categoria'] . "&err=2");
+                    if($_REQUEST["quantita_articolo$indice_prodotto"] > $quantita) { // quantita scelta non disponibile
+                        header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=". $_REQUEST['categoria'] . "&err=2&articolo=" . $p->getElementsByTagName("nome")->item(0)->nodeValue);
                         die();
                     }
                     $p->getElementsByTagName("quantita")->item(0)->nodeValue -= $_REQUEST["quantita_articolo$indice_prodotto"];
                 }
+                $indice_prodotto++;
             }
             break;
         }
         $usernameXML->getElementsByTagName("saldo")->item(0)->nodeValue -= $_REQUEST['prezzo_totale']; // sottrazione saldo all'account
         // validazione e salvataggio
-        $usernameXML->schemaValidate("../XSD/username.xsd");
-        $magazzino->schemaValidate("../XSD/magazzino.xsd");
-        $usernameXML->save("../XML/" . $_REQUEST['user'] . ".xml");
-        $magazzino->save("../XML/magazzino.xml");
+        $usernameXML->schemaValidate("../../XSD/username.xsd");
+        $magazzino->schemaValidate("../../XSD/magazzino.xsd");
+        $usernameXML->save("../../XML/utenti/" . $_REQUEST['user'] . ".xml");
+        $magazzino->save("../../XML/magazzino.xml");
         header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=" . $_REQUEST['categoria']);
         die();
     } else {

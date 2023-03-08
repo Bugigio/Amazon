@@ -13,7 +13,7 @@
         <xs:sequence>
             <xs:element name="nome" type="xs:string"/>
             <xs:element name="password" type="xs:string"/>
-            <xs:element name="saldo" type="xs:integer"/>
+            <xs:element name="saldo" type="xs:double"/>
         </xs:sequence>
     </xs:complexType>
 

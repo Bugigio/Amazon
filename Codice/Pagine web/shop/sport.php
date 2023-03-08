@@ -9,9 +9,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login con i file</title>
-        <link rel="stylesheet" href="../Stili/shop.css">
-        <script src="shop.js"></script>
+        <title>Sport</title>
+        <link rel="stylesheet" href="../../Stili/shop.css">
+        <script src="../JS/shop.js"></script>
         <?php
             if(isset($_REQUEST['user'])) {
                 if(isset($_REQUEST['err'])) { // gestione errori
@@ -21,7 +21,7 @@
                             echo "'Saldo insufficente'";
                             break;
                         case 2:
-                            
+                            echo "`La quantità dell'articolo " .$_REQUEST['articolo'] ." non è disponibile`";
                     }
                     echo ");</script>";
                 }
@@ -33,19 +33,19 @@
                     die();
                 }
                 $doc = new DOMDocument();
-                $doc->load('../XML/magazzino.xml');
+                $doc->load('../../XML/magazzino.xml');
                 $tagCategoria = $doc->getElementsByTagName($categoria);
                 ?>
     </head>
     <body style="margin: 0px;">
         <header>
             <div class="header">
-                <div class="sezione"><a href="#">LIBRI</a></div>
+                <div class="sezione"><a href="libri.php?user=<?php echo $_GET['user']; ?>&categoria=libri">LIBRI</a></div>
                 <div class="sezione"><a href="tecnologia.php?user=<?php echo $_GET['user']; ?>&categoria=tecnologia">TECNOLOGIA</a></div>
-                <div class="sezione"><a href="film.php?user=<?php echo $_GET['user']; ?>&categoria=film"">FILM</a></div>
+                <div class="sezione"><a href="film.php?user=<?php echo $_GET['user']; ?>&categoria=film">FILM</a></div>
                 <div class="sezione"><a href="vestiti.php?user=<?php echo $_GET['user']; ?>&categoria=vestiti">VESTITI</a></div>
-                <div class="sezione"><a href="sport.php?user=<?php echo $_GET['user']; ?>&categoria=sport">SPORT</a></div>
-                <div id="pulsante_account"><a href="account.php?user=<?php echo $_GET['user'];?>">ACCOUNT</a></div>
+                <div class="sezione"><a href="#">SPORT</a></div>
+                <div id="pulsante_account"><a href="../account.php?user=<?php echo $_GET['user'];?>">ACCOUNT</a></div>
             </div>
         </header>
         <div class="container">
@@ -57,6 +57,7 @@
                         foreach($prodotti as $p) {
                             $nome = $p->getElementsByTagName("nome")->item(0)->nodeValue;
                             $prezzo = $p->getElementsByTagName("prezzo")->item(0)->nodeValue;
+                            $quantita = $p->getElementsByTagName("quantita")->item(0)->nodeValue;
                 ?>
             <div class="articolo">
                 <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
@@ -65,7 +66,7 @@
                                                                                                 Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor.
                                                                                                 Donec consequat diam vitae nisl sagittis, in mollis ante varius.
                                                                                                 Suspendisse vestibulum pretium massa, ut tristique lorem laoreet non. Nullam at mi ut turpis fermentum feugiat eget sodales tortor.
-                                                                                                <br><input class="prezzo_articolo" type="text" name="prezzo_articolo<?php echo $i ?>" value="<?php echo $prezzo; ?>" readonly> </div>
+                                                                                                <br><input class="prezzo_articolo" type="text" name="prezzo_articolo<?php echo $i ?>" value="<?php echo $prezzo; ?>" readonly> <input type="text" class="disponibilita_articolo" name="quantita_max" value="max: <?php echo $quantita;?>" readonly></div>
                 <div class="quantita_acquisto_articolo">
                     <div class="box_quantita">
                         <button class="bottone" type="button" onclick="aumenta(<?php echo $i - 1?>)">+</button>

@@ -4,27 +4,27 @@
         <prodotto>
             <nome>La vita di Arbucci</nome>
             <prezzo>11.69</prezzo>
-            <quantita>12</quantita>
+            <quantita>6</quantita>
         </prodotto>
         <prodotto>
             <nome>Linguaggi di programmazione</nome>
             <prezzo>15.30</prezzo>
-            <quantita>4</quantita>
+            <quantita>54</quantita>
         </prodotto>
         <prodotto>
             <nome>Idee per il business</nome>
             <prezzo>17.25</prezzo>
-            <quantita>3</quantita>
+            <quantita>76</quantita>
         </prodotto>
         <prodotto>
             <nome>Minecraft: guida</nome>
             <prezzo>11.50</prezzo>
-            <quantita>9</quantita>
+            <quantita>23</quantita>
         </prodotto>
         <prodotto>
             <nome>La caduta di Amazon</nome>
             <prezzo>18.99</prezzo>
-            <quantita>6</quantita>
+            <quantita>89</quantita>
         </prodotto>
     </libri>
     <tecnologia>

@@ -41,7 +41,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: auto;
 }
 img {
@@ -106,9 +107,13 @@ a {
 .prezzo_articolo {
     margin-top: 10px;
     border: 0px;
-    width: 60px;
+    width: 100px;
 }
-
+.disponibilita_articolo {
+    margin-top: 10px;
+    border: 0px;
+    width: 100px;
+}
 
 /* div {
     border: 2px solid black;
