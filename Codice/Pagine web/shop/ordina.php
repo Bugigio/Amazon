@@ -5,6 +5,10 @@
         $magazzino->load("../../XML/magazzino.xml");
         $usernameXML = new DOMDocument();
         $usernameXML->load("../../XML/utenti/" . $_REQUEST['user'] . ".xml");
+        $usernameXML->encoding = 'utf-8';
+        $usernameXML->xmlVersion = '1.0';
+        $usernameXML->preserveWhiteSpace = false;
+        $usernameXML->formatOutput = true;
         // verifica saldo disponibile
         echo $usernameXML->getElementsByTagName("saldo")->item(0)->nodeValue;
         if($usernameXML->getElementsByTagName("saldo")->item(0)->nodeValue < $_REQUEST['prezzo_totale']) {
@@ -23,6 +27,28 @@
                         die();
                     }
                     $p->getElementsByTagName("quantita")->item(0)->nodeValue -= $_REQUEST["quantita_articolo$indice_prodotto"];
+                    // scrittura ordine in username.xml
+                    try {
+                        $nuovoOrdine = $usernameXML->createElement("prodotto");
+                        $nomeOrdine = $usernameXML->createElement("nome", $p->getElementsByTagName("nome")->item(0)->nodeValue);
+                        $quantitaOrdine = $usernameXML->createElement("quantita", $_REQUEST["quantita_articolo$indice_prodotto"]);
+                        $prezzoOrdine = $usernameXML->createElement("prezzo", $p->getElementsByTagName("prezzo")->item(0)->nodeValue * $_REQUEST["quantita_articolo$indice_prodotto"]);
+                        $nuovoOrdine->appendChild($nomeOrdine);
+                        $nuovoOrdine->appendChild($quantitaOrdine);
+                        $nuovoOrdine->appendChild($prezzoOrdine);
+                        $usernameXML->getElementsByTagName("ordini")->item(0)->appendChild($nuovoOrdine);
+                    } catch (\Throwable $th) {
+                        // $ordini = $usernameXML->createElement("ordini");
+                        // $nuovoOrdine = $usernameXML->createElement("prodotto");
+                        // $nomeOrdine = $usernameXML->createElement("nome", $p->getElementsByTagName("nome")->item(0)->nodeValue);
+                        // $quantitaOrdine = $usernameXML->createElement("quantita", $_REQUEST["quantita_articolo$indice_prodotto"]);
+                        // $prezzoOrdine = $usernameXML->createElement("prezzo", $p->getElementsByTagName("prezzo")->item(0)->nodeValue * $_REQUEST["quantita_articolo$indice_prodotto"]);
+                        // $nuovoOrdine->appendChild($nomeOrdine);
+                        // $nuovoOrdine->appendChild($quantitaOrdine);
+                        // $nuovoOrdine->appendChild($prezzoOrdine);
+                        // $ordini->appendChild($nuovoOrdine);
+                        // $usernameXML->appendChild($ordini);
+                    }
                 }
                 $indice_prodotto++;
             }

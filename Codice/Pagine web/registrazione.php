@@ -61,17 +61,8 @@
     $tagUtente->appendChild($tagDati);
 
     // parte di dati ordini
-    $tagOrdini = $usernameXML->createElement('ordini');
-    $tagLibri = $usernameXML->createElement('libri', " ");
-    $tagOrdini->appendChild($tagLibri);
-    $tagTecnologia = $usernameXML->createElement('tecnologia', " ");
-    $tagOrdini->appendChild($tagTecnologia);
-    $tagFilm = $usernameXML->createElement('film', " ");
-    $tagOrdini->appendChild($tagFilm);
-    $tagVestiti = $usernameXML->createElement('vestiti', " ");
-    $tagOrdini->appendChild($tagVestiti);
-    $tagSport = $usernameXML->createElement('sport', " ");
-    $tagOrdini->appendChild($tagSport);
+    $tagOrdini = $usernameXML->createElement('ordini', " 
+    ");
     $tagUtente->appendChild($tagOrdini);
     $usernameXML->appendChild($tagUtente);
     $usernameXML->schemaValidate("../XSD/username.xsd");

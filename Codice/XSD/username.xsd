@@ -4,7 +4,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="dati" type="dati" maxOccurs="1" minOccurs="1" />
-                <xs:element name="ordini" type="ordini" maxOccurs="1" minOccurs="1" />
+                <xs:element name="ordini" type="ordini" maxOccurs="1" minOccurs="0" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -18,16 +18,6 @@
     </xs:complexType>
 
     <xs:complexType name="ordini">
-        <xs:sequence>
-            <xs:element name="libri" type="categoria" maxOccurs="1" minOccurs="1"/>
-            <xs:element name="tecnologia" type="categoria" maxOccurs="1" minOccurs="1"/>
-            <xs:element name="film" type="categoria" maxOccurs="1" minOccurs="1"/>
-            <xs:element name="vestiti" type="categoria" maxOccurs="1" minOccurs="1"/>
-            <xs:element name="sport" type="categoria" maxOccurs="1" minOccurs="1"/>
-        </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="categoria">
         <xs:sequence>
             <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>

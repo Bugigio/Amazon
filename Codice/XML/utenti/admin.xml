@@ -3,13 +3,7 @@
   <dati>
     <nome>admin</nome>
     <password>admin</password>
-    <saldo>778</saldo>
+    <saldo>227.2</saldo>
   </dati>
-  <ordini>
-    <libri> </libri>
-    <tecnologia> </tecnologia>
-    <film> </film>
-    <vestiti> </vestiti>
-    <sport> </sport>
-  </ordini>
+  
 </utente>

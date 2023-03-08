@@ -36,7 +36,19 @@
             </div>
         </div>
         <div class="ordini_container">
-            
+            <?php 
+                $prodotti = $account->getElementsByTagName("prodotto");
+                foreach($prodotti as $p) {
+                    ?>
+                    <div class="articolo">
+                        <h3><?php echo $p->getElementsByTagName("nome")->nodeValue; ?></h3>
+                        <p><?php echo $p->getElementsByTagName("prezzo")->nodeValue; ?></p>
+                        <p><?php echo $p->getElementsByTagName("quantita")->nodeValue; ?></p>
+                        
+                    </div>
+                    <?php
+                }
+            ?>
         </div>
         
         <?php
