@@ -1,1 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="magazzino">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libri" type="libri" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element name="tecnologia" type="tecnologia" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element name="film" type="film" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element name="vestiti" type="vestiti" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element name="sport" type="sport" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="libri">
+        <xs:sequence>
+            <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tecnologia">
+        <xs:sequence>
+            <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="film">
+        <xs:sequence>
+            <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vestiti">
+        <xs:sequence>
+            <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="sport">
+        <xs:sequence>
+            <xs:element name="prodotto" type="prodotto" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="prodotto">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string" />
+            <xs:element name="prezzo" type="xs:double" />
+            <xs:element name="quantita" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
