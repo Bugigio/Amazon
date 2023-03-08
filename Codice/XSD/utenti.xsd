@@ -1,30 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="utente">
+    <xs:element name="registro">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="dati" type="dati" maxOccurs="1" minOccurs="1" />
-                <xs:element name="ordini" type="ordini" maxOccurs="1" minOccurs="1" />
+                <xs:element name="account" type="tipo_account" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="dati">
+    <xs:complexType name="tipo_account">
         <xs:sequence>
-            <xs:element name="nome" type="xs:string"/>
-            <xs:element name="password" type="xs:string"/>
-            <xs:element name="saldo" type="xs:integer"/>
+            <xs:element name="user" type="xs:string"/>
+            <xs:element name="pasw" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-
-    <xs:complexType name="ordini">
-        <xs:sequence>
-            <xs:element name="libri" type="xs:string"/>
-            <xs:element name="tecnologia" type="xs:string"/>
-            <xs:element name="film" type="xs:string"/>
-            <xs:element name="vestiti" type="xs:string"/>
-            <xs:element name="sport" type="xs:string"/>
-        </xs:sequence>
-    </xs:complexType>
-
 </xs:schema>

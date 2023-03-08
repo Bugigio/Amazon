@@ -74,6 +74,7 @@
     $tagOrdini->appendChild($tagSport);
     $tagUtente->appendChild($tagOrdini);
     $usernameXML->appendChild($tagUtente);
+    $usernameXML->schemaValidate("../XSD/username.xsd");
     $usernameXML->save($nome_fileXML);
 
 
@@ -87,6 +88,7 @@
         $registro->appendChild($account);
         $dom->appendChild($registro);
     }
+    $dom->schemaValidate("../XSD/utenti.xsd");
     $dom->save($nome_file);
 
     header('Location: registrati.php');

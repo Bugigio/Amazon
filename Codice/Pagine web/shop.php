@@ -14,6 +14,17 @@
         <script src="shop.js"></script>
         <?php
             if(isset($_REQUEST['user'])) {
+                if(isset($_REQUEST['err'])) { // gestione errori
+                    echo "<script>alert(";
+                    switch($_REQUEST['err']) {
+                        case 1:
+                            echo "'Saldo insufficente'";
+                            break;
+                        case 2:
+                            
+                    }
+                    echo ");</script>";
+                }
                 $categoria = "";
                 if(isset($_REQUEST['categoria'])) {
                     $categoria = $_REQUEST['categoria'];
@@ -38,6 +49,7 @@
             </div>
         </header>
         <div class="container">
+        <form action="ordina.php?user=<?php echo $_REQUEST['user'] . "&categoria=" . $categoria;?>" method="post">
                 <?php
                     $i = 1;
                     foreach($tagCategoria as $t) {
@@ -56,9 +68,9 @@
                                                                                                 <br><input class="prezzo_articolo" type="text" name="prezzo_articolo<?php echo $i ?>" value="<?php echo $prezzo; ?>" readonly> </div>
                 <div class="quantita_acquisto_articolo">
                     <div class="box_quantita">
-                        <button class="bottone" onclick="aumenta(<?php echo $i - 1?>)">+</button>
-                        <input type="text" name="quantita" class="numero_quantita" min="0" max="10" value="0" readonly>
-                        <button class="bottone" onclick="diminuisci(<?php echo $i - 1?>)">-</button>
+                        <button class="bottone" type="button" onclick="aumenta(<?php echo $i - 1?>)">+</button>
+                        <input type="text" name="quantita_articolo<?php echo $i?>" class="numero_quantita" min="0" max="10" value="0" readonly>
+                        <button class="bottone" type="button" onclick="diminuisci(<?php echo $i - 1?>)">-</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +84,7 @@
                 }
             ?>
         </div>
-        <form action="ordina.php?user=<?php echo $_REQUEST['user'];?>" method="post">
+        
             <footer>
                 <div class="footer"><input name="submit" type="submit" value="ORDINA"><input type="text" name="prezzo_totale" id="prezzo_totale" value="0.00" readonly></div>
             </footer>
