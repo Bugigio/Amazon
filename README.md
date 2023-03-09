@@ -47,3 +47,11 @@ In this case, they have to be linked dinamically to the files because by default
 - magazzino.xsd: linked to magazzino.xml;
 - username.xsd: linked to each "username".xml document;
 - utenti.xsd: linked to utenti.xml;
+
+# Other info
+To complete there is a file .drawio (readable by the website https://www.draw.io) that allows you to understand how each page works.
+Email to contact us:
+- Gabriele: gabriele.tommasi@antonioscarpa.edu.it;
+- Lorenzo: lorenzo.barattin@antonioscarpa.edu.it;
+
+After september 2023 these two emails will be deleted.
