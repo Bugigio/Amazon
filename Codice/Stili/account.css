@@ -49,3 +49,16 @@ a {
     margin-left: auto;
 } */
 /* fine prova */
+
+.ordini_container {
+    border-color: black;
+}
+
+.articolo {
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 2px solid black;
+    width: 25%;
+    border-radius: 5px;
+}
+
