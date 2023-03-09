@@ -38,6 +38,8 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #f2f2f2;
+    font-weight: bold;
   }
   
   input[type="submit"] {
@@ -62,6 +64,16 @@
   }
   
   .registrati a:hover {
+    text-decoration: underline;
+  }
+
+  /* stile del link per cambio password */
+  .err a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .err a:hover {
     text-decoration: underline;
   }
   

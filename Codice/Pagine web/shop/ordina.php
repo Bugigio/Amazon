@@ -62,9 +62,9 @@
         $magazzino->schemaValidate("../../XSD/magazzino.xsd");
         $usernameXML->save("../../XML/utenti/" . $_REQUEST['user'] . ".xml");
         $magazzino->save("../../XML/magazzino.xml");
-        header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=" . $_REQUEST['categoria']);
+        header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=" . $_REQUEST['categoria'] . "&success=1");
         die();
     } else {
-        header("location: login.php?err=1");
+        header("location: ../login.php?err=1");
     }
 ?>

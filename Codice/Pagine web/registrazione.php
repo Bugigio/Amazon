@@ -1,8 +1,7 @@
 <?php
     if(!isSet($_REQUEST['registrati'])){
-        //header("location: login.php?err=1");
-        //die();
-        echo "non hai inserito valori";
+        header("location: registrati.php?err=2");
+        die();
     } 
     
     //salvo utente e password dall'array associativo in variabili
@@ -59,11 +58,6 @@
     $tagDati->appendChild($tagPassword);
     $tagDati->appendChild($tagSaldo);
     $tagUtente->appendChild($tagDati);
-
-    // parte di dati ordini
-    $tagOrdini = $usernameXML->createElement('ordini', " 
-    ");
-    $tagUtente->appendChild($tagOrdini);
     $usernameXML->appendChild($tagUtente);
     $usernameXML->schemaValidate("../XSD/username.xsd");
     $usernameXML->save($nome_fileXML);

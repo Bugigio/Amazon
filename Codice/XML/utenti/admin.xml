@@ -8,13 +8,8 @@
   <ordini>
     <prodotto>
       <nome>Linguaggi di programmazione</nome>
-      <quantita>1</quantita>
-      <prezzo>15.3</prezzo>
-    </prodotto>
-    <prodotto>
-      <nome>Barbie e i lavori da donna</nome>
       <quantita>4</quantita>
-      <prezzo>22.76</prezzo>
+      <prezzo>61.2</prezzo>
     </prodotto>
   </ordini>
 </utente>

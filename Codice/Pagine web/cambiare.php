@@ -35,5 +35,8 @@
             header("location: cambiaPassword.php?err=2&user=$user");
         }
 
+    } else {
+        header("location: login.php?err=1");
+        die();
     }
 ?>
