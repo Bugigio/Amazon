@@ -37,7 +37,7 @@
                 $tagCategoria = $doc->getElementsByTagName($categoria);
                 ?>
     </head>
-    <body style="margin: 0px;" background="https://media.istockphoto.com/id/1188881758/it/vettoriale/sfondo-ondulato-alla-moda-illustrazione-vettoriale-di-motivi-a-scacchi-con-illusione.jpg?s=170667a&w=0&k=20&c=sv0aUdemUwaf0wPJnOzKp-rxrv0D0qSgI_ehen4QtZg=">
+    <body style="margin: 0px;" background="https://lezionicomputergrafica.altervista.org/blog/wp-content/uploads/2017/09/Schermata-2017-09-06-alle-09.29.04-e1504683049637-520x245.png">
         <header>
             <div class="header" >
                 <div class="sezione"><a href="#">LIBRI</a></div>
@@ -60,7 +60,7 @@
                             $quantita = $p->getElementsByTagName("quantita")->item(0)->nodeValue;
                 ?>
             <div class="articolo">
-                <div class="immagine_articolo"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
+                <div class="immagine_articolo"><img src="../../Immagini/libri/immagineLibri<?php echo $i;?>.jpg" alt=""></div>
                 <div class="descrizione_articolo"><h3 class="titolo"><?php echo $nome;?></h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                                                                 Curabitur efficitur, ex id ultricies ultricies, metus mauris ultrices nisl, vitae volutpat felis odio in libero.
                                                                                                 Sed dapibus nec elit quis pulvinar. In faucibus nisl ac fermentum egestas. Quisque hendrerit nibh in velit faucibus tempor.
