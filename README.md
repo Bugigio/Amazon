@@ -15,4 +15,5 @@ Going into the folder "Pagine web" you will find all the php pages that were cre
 - shop folder: contains all the pages for each category of products and also the page ordina.php:
   - (film, libri, sport, tecnologia, vestiti).php: they have se same code to display different products from magazzino.xml and here you can buy the products;
   - ordina.php: php code to order the products that you buy (only in the page that you are at the moment);
+
 As you can see there is non shopping cart because we thought it in another and simplified way.
