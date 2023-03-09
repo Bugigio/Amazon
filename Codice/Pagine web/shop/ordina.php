@@ -65,6 +65,6 @@
         header("location: " . $_REQUEST['categoria'] . ".php?user=" . $_REQUEST['user'] . "&categoria=" . $_REQUEST['categoria']);
         die();
     } else {
-        header("location: login.php?err=1");
+        header("location: ../login.php?err=1");
     }
 ?>

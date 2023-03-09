@@ -1,6 +1,6 @@
 <?php
     if(!isSet($_REQUEST['user'])){
-        header("location: login.php?err=1");
+        header("location: ../login.php?err=1");
         die();
     }
 ?>
@@ -13,29 +13,28 @@
         <link rel="stylesheet" href="../../Stili/shop.css">
         <script src="../JS/shop.js"></script>
         <?php
-            if(isset($_REQUEST['user'])) {
-                if(isset($_REQUEST['err'])) { // gestione errori
-                    echo "<script>alert(";
-                    switch($_REQUEST['err']) {
-                        case 1:
-                            echo "'Saldo insufficente'";
-                            break;
-                        case 2:
-                            echo "`La quantità dell'articolo " .$_REQUEST['articolo'] ." non è disponibile`";
-                    }
-                    echo ");</script>";
+            if(isset($_REQUEST['err'])) { // gestione errori
+                echo "<script>alert(";
+                switch($_REQUEST['err']) {
+                    case 1:
+                        echo "'Saldo insufficente'";
+                        break;
+                    case 2:
+                        echo "`La quantità dell'articolo " .$_REQUEST['articolo'] ." non è disponibile`";
                 }
-                $categoria = "";
-                if(isset($_REQUEST['categoria'])) {
-                    $categoria = $_REQUEST['categoria'];
-                } else {
-                    header("location: login.php?err=1");
-                    die();
-                }
-                $doc = new DOMDocument();
-                $doc->load('../../XML/magazzino.xml');
-                $tagCategoria = $doc->getElementsByTagName($categoria);
-                ?>
+                echo ");</script>";
+            }
+            $categoria = "";
+            if(isset($_REQUEST['categoria'])) {
+                $categoria = $_REQUEST['categoria'];
+            } else {
+                header("location: ../login.php?err=1");
+                die();
+            }
+            $doc = new DOMDocument();
+            $doc->load('../../XML/magazzino.xml');
+            $tagCategoria = $doc->getElementsByTagName($categoria);
+        ?>
     </head>
     <body style="margin: 0px;">
         <header>
@@ -76,12 +75,9 @@
                 </div>
             </div>
             <?php
-                            $i++;
-                        }
-                        break;
+                        $i++;
                     }
-                } else {
-                    header('location: login.php?err=1');
+                    break;
                 }
             ?>
         </div>

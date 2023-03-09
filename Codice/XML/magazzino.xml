@@ -29,9 +29,9 @@
   </libri>
   <tecnologia>
     <prodotto>
-      <nome>Tasteira intel pro Max</nome>
+      <nome>Tastiera intel pro Max</nome>
       <prezzo>22.00</prezzo>
-      <quantita>5</quantita>
+      <quantita>3</quantita>
     </prodotto>
     <prodotto>
       <nome>Monitor Samsung 25 pollici</nome>
@@ -41,17 +41,17 @@
     <prodotto>
       <nome>Mouse pro gaming</nome>
       <prezzo>15.75</prezzo>
-      <quantita>8</quantita>
+      <quantita>7</quantita>
     </prodotto>
     <prodotto>
       <nome>Hard disk (2Tb)</nome>
       <prezzo>135.00</prezzo>
-      <quantita>5</quantita>
+      <quantita>4</quantita>
     </prodotto>
     <prodotto>
       <nome>Webcam cinema</nome>
       <prezzo>45.65</prezzo>
-      <quantita>9</quantita>
+      <quantita>8</quantita>
     </prodotto>
   </tecnologia>
   <film>

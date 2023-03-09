@@ -1,6 +1,9 @@
 <?php
     session_start();
-    if(!isSet($_REQUEST['login'])) header("location: login.php?err=1");
+    if(!isSet($_REQUEST['login'])) {
+        header("location: login.php?err=1");
+        die();
+    }
     $utente = $_REQUEST['user'];
     $password = $_REQUEST['password'];
 

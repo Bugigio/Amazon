@@ -4,4 +4,8 @@
     <user>admin</user>
     <pasw>admin</pasw>
   </account>
+  <account>
+    <user/>
+    <pasw/>
+  </account>
 </registro>

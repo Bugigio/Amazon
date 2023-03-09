@@ -10,7 +10,8 @@
     <body>
         <?php
             if(!isset($_GET['user'])) {
-                header("location: login.php");
+                header("location: login.php?err=1");
+                die();
             }
             if(isset($_REQUEST['err'])) {
                 echo "<div class=err>";
