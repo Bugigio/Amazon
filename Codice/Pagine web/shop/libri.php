@@ -37,9 +37,9 @@
                 $tagCategoria = $doc->getElementsByTagName($categoria);
                 ?>
     </head>
-    <body style="margin: 0px;">
+    <body style="margin: 0px;" background="https://media.istockphoto.com/id/1188881758/it/vettoriale/sfondo-ondulato-alla-moda-illustrazione-vettoriale-di-motivi-a-scacchi-con-illusione.jpg?s=170667a&w=0&k=20&c=sv0aUdemUwaf0wPJnOzKp-rxrv0D0qSgI_ehen4QtZg=">
         <header>
-            <div class="header">
+            <div class="header" >
                 <div class="sezione"><a href="#">LIBRI</a></div>
                 <div class="sezione"><a href="tecnologia.php?user=<?php echo $_GET['user']; ?>&categoria=tecnologia">TECNOLOGIA</a></div>
                 <div class="sezione"><a href="film.php?user=<?php echo $_GET['user']; ?>&categoria=film">FILM</a></div>
@@ -49,7 +49,7 @@
             </div>
         </header>
         <div class="container">
-        <form action="ordina.php?user=<?php echo $_REQUEST['user'] . "&categoria=" . $categoria;?>" method="post">
+        <form action="ordina.php?user=<?php echo $_REQUEST['user'] . "&categoria=" . $categoria;?>" method="post" >
                 <?php
                     $i = 1;
                     foreach($tagCategoria as $t) {
@@ -75,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            <hr>
             <?php
                             $i++;
                         }

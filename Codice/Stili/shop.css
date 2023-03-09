@@ -10,7 +10,8 @@
     height: 156px;
     border: 1px solid black;
     margin: 5px;
-    
+    border: 9px solid;
+    border-image: url(/img/border-image.png) 39 / 9px / 0px stretch;
 }
 .descrizione_articolo {
     margin-left: 10px;
@@ -19,6 +20,7 @@
     flex-direction: column;
     text-align: justify;
     flex: 1;
+    background-color: aliceblue;
 }
 .quantita_acquisto_articolo {
     display: flex;
@@ -30,6 +32,7 @@
 .numero_quantita {
     text-align: center;
     width: 100%;
+    border-radius: 5%;
 }
 .container {
     /* border: 1px solid black; */
@@ -41,8 +44,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
 }
 img {
@@ -51,6 +54,12 @@ img {
 }
 .bottone {
     width: 100%;
+    background-color: #353434;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
 }
 .sezione {
     width: auto;
@@ -113,6 +122,10 @@ a {
     margin-top: 10px;
     border: 0px;
     width: 100px;
+}
+
+hr {
+    width: 95%;
 }
 
 /* div {
