@@ -41,9 +41,9 @@
                 foreach($prodotti as $p) {
                     ?>
                     <div class="articolo">
-                        <h3><?php echo $p->getElementsByTagName("nome")->nodeValue; ?></h3>
-                        <p><?php echo $p->getElementsByTagName("prezzo")->nodeValue; ?></p>
-                        <p><?php echo $p->getElementsByTagName("quantita")->nodeValue; ?></p>
+                        <h3><?php echo $p->getElementsByTagName("nome")->item(0)->nodeValue; ?></h3>
+                        <p><?php echo $p->getElementsByTagName("prezzo")->item(0)->nodeValue; ?></p>
+                        <p><?php echo $p->getElementsByTagName("quantita")->item(0)->nodeValue; ?></p>
                         
                     </div>
                     <?php

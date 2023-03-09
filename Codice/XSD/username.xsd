@@ -26,8 +26,8 @@
     <xs:complexType name="prodotto">
         <xs:sequence>
             <xs:element name="nome" type="xs:string" maxOccurs="1" minOccurs="1"/>
-            <xs:element name="prezzo" type="xs:double" maxOccurs="1" minOccurs="1"/>
             <xs:element name="quantita" type="xs:integer" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="prezzo" type="xs:double" maxOccurs="1" minOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
 
