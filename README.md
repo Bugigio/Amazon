@@ -23,7 +23,7 @@ As you can see there is non shopping cart because we thought it in another and s
 # CSS Pages
 Going into the folder "Stili" you will find all the css pages we created for the relative PHP pages:
 - account.css: linked to account.php;
-- cambiaPassword.css: linked to cambiaPassword.css;
+- cambiaPassword.css: linked to cambiaPassword.php;
 - shop.css: linked to (film, libri, sport, tecnologia, vestiti).php;
 - styleLogin.css: linked to login.php;
 - styleRegistrati: linked to registrati.php;
