@@ -9,7 +9,7 @@
     <prodotto>
       <nome>Linguaggi di programmazione</nome>
       <prezzo>15.30</prezzo>
-      <quantita>10</quantita>
+      <quantita>13</quantita>
     </prodotto>
     <prodotto>
       <nome>Idee per il business</nome>
@@ -68,7 +68,7 @@
     <prodotto>
       <nome>Barbie e i lavori da donna</nome>
       <prezzo>5.69</prezzo>
-      <quantita>8</quantita>
+      <quantita>4</quantita>
     </prodotto>
     <prodotto>
       <nome>Transformers 6: l'errore della matirce</nome>
@@ -88,7 +88,7 @@
       <quantita>9</quantita>
     </prodotto>
     <prodotto>
-      <nome>Gonna Prada a fiori</nome>
+      <nome>Gonna Prada</nome>
       <prezzo>40.00</prezzo>
       <quantita>7</quantita>
     </prodotto>
@@ -98,7 +98,7 @@
       <quantita>13</quantita>
     </prodotto>
     <prodotto>
-      <nome>Cappello disel</nome>
+      <nome>Cappello diesel</nome>
       <prezzo>14.89</prezzo>
       <quantita>8</quantita>
     </prodotto>
