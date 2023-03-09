@@ -1,6 +1,7 @@
 # Amazon
 Recreating an e-commerce similar to amazon. We are two students in the last year of high school so don't expect too much (css is stressful btw).
-Team duo: Lorenzo Barattin, Gabriele Tommasi
+Team duo: Lorenzo Barattin (AKA LolloBara), Gabriele Tommasi (AKA Bugigio).
+We are italian so the website will be in italian. In the future maybe we will try to translate every file in english (except for xml files).
 
 # PHP Pages
 Going into the folder "Pagine web" you will find all the php pages that were created in this project (also one file JS):
@@ -20,7 +21,7 @@ Going into the folder "Pagine web" you will find all the php pages that were cre
 As you can see there is non shopping cart because we thought it in another and simplified way.
 
 # CSS Pages
-Going into "Stili" you will find all the css pages we created for the relative PHP pages:
+Going into the folder "Stili" you will find all the css pages we created for the relative PHP pages:
 - account.css: linked to account.php;
 - cambiaPassword.css: linked to cambiaPassword.css;
 - shop.css: linked to (film, libri, sport, tecnologia, vestiti).php;
@@ -28,3 +29,19 @@ Going into "Stili" you will find all the css pages we created for the relative P
 - styleRegistrati: linked to registrati.php;
 
 You may notice that these css are similar to each other except for the shop.css and account.css ones. In fact we asked chat GPT for help and then we modified some colors and other things.
+
+# XML Pages
+Going into the folder "XML" you may find all the XML files that makes this "website" working, making it similar to databases.
+We wrote this files dinamically with PHP functions thanks to the family DOMDocument() functions.
+We received an input in this project. In fact login.php, registrati.php, registrazione.php were given by our professor, but they were missing functions to create a new XML files each times someone new register a new account. We can say we created half of each of those files. Below there are the XML ones:
+- magazzino.xml: it is the main file where we put the products;
+- utenti.xml: main file where we put the essential information about every user (username, password);
+- inside the forlder "utenti":
+  -  "username".xml: username is between " because the name change based on the name of the specific user;
+
+# XSD Pages
+For who doesn't know what a XSD file is, we can say it is like a list of rules of formatting for the XML file that it is linked to.
+In this case, they have to be linked dinamically to the files because by default, in the opening tag of XML, we put the link to the XSD file. Here, where we create XML files like a furnace, we do it dinamically thanks to the function "schemaValidate()" in the PHP language. Here it is the list of XSD files that you find in the "XSD" folder:
+- magazzino.xsd: linked to magazzino.xml;
+- username.xsd: linked to each "username".xml document;
+- utenti.xsd: linked to utenti.xml;
