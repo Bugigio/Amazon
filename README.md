@@ -2,7 +2,7 @@
 Recreating an e-commerce similar to amazon
 Team duo: Lorenzo Barattin, Gabriele Tommasi
 
-# Pages
+  # Pages
 Going into the folder "Pagine web" you will find all the php pages that were created in this project (also one file JS):
 - account.php: is the page were you can see your orders, cancel them and recharge your credit;
 - annullaOrdine.php: it's a page where there is only PHP to cancel an order;
