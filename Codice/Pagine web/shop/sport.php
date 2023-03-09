@@ -24,6 +24,15 @@
                 }
                 echo ");</script>";
             }
+            if(isset($_REQUEST['success'])) { // gestione errori
+                echo "<script>alert(";
+                switch($_REQUEST['err']) {
+                    case 1:
+                        echo "'Ordine completato con successo'";
+                        break;
+                }
+                echo ");</script>";
+            }
             $categoria = "";
             if(isset($_REQUEST['categoria'])) {
                 $categoria = $_REQUEST['categoria'];

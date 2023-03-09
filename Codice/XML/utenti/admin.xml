@@ -3,13 +3,13 @@
   <dati>
     <nome>admin</nome>
     <password>admin</password>
-    <saldo>76.25</saldo>
+    <saldo>49.55</saldo>
   </dati>
   <ordini>
     <prodotto>
-      <nome>Idee per il business</nome>
-      <quantita>2</quantita>
-      <prezzo>34.5</prezzo>
+      <nome>Linguaggi di programmazione</nome>
+      <quantita>4</quantita>
+      <prezzo>61.2</prezzo>
     </prodotto>
   </ordini>
 </utente>

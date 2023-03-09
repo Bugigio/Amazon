@@ -9,12 +9,12 @@
     <prodotto>
       <nome>Linguaggi di programmazione</nome>
       <prezzo>15.30</prezzo>
-      <quantita>14</quantita>
+      <quantita>10</quantita>
     </prodotto>
     <prodotto>
       <nome>Idee per il business</nome>
       <prezzo>17.25</prezzo>
-      <quantita>65</quantita>
+      <quantita>67</quantita>
     </prodotto>
     <prodotto>
       <nome>Minecraft: guida</nome>
