@@ -13,4 +13,4 @@ Going into the folder "Pagine web" you will find all the php pages that were cre
 - registrati.php: it allows you to register a new account;
 - registrazione.php: only the php code to create a new file XML for the new account you just created and add a new account in the utenti.xml file;
 - shop folder: contains all the pages for each category of products and also the page ordina.php:
-_ ciao
+° ciao
