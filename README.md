@@ -1,5 +1,6 @@
 # Amazon
-Recreating an e-commerce similar to amazon. We are two students in the last year of high school so don't expect too much (css is stressful btw).<br>
+Recreating an e-commerce similar to amazon. We are two students in the last year of high school so don't expect too much (css is stressful btw).
+
 Team duo: Lorenzo Barattin (AKA LolloBara), Gabriele Tommasi (AKA Bugigio).<br>
 We are italian so the website will be in italian. In the future maybe we will try to translate every file in english (except for xml files).
 
