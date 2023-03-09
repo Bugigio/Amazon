@@ -1,1 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
+<utente>
+  <dati>
+    <nome>gabriele</nome>
+    <password>ciccio</password>
+    <saldo>0</saldo>
+  </dati>
+</utente>
