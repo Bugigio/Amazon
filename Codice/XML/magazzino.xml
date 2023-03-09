@@ -31,7 +31,7 @@
     <prodotto>
       <nome>Tastiera intel pro Max</nome>
       <prezzo>22.00</prezzo>
-      <quantita>3</quantita>
+      <quantita>2</quantita>
     </prodotto>
     <prodotto>
       <nome>Monitor Samsung 25 pollici</nome>
@@ -51,7 +51,7 @@
     <prodotto>
       <nome>Webcam cinema</nome>
       <prezzo>45.65</prezzo>
-      <quantita>8</quantita>
+      <quantita>5</quantita>
     </prodotto>
   </tecnologia>
   <film>

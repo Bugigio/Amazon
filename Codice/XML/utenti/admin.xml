@@ -3,13 +3,33 @@
   <dati>
     <nome>admin</nome>
     <password>admin</password>
-    <saldo>49.55</saldo>
+    <saldo>990.6</saldo>
   </dati>
   <ordini>
     <prodotto>
       <nome>Linguaggi di programmazione</nome>
       <quantita>4</quantita>
       <prezzo>61.2</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Webcam cinema</nome>
+      <quantita>1</quantita>
+      <prezzo>45.65</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Webcam cinema</nome>
+      <quantita>1</quantita>
+      <prezzo>45.65</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Webcam cinema</nome>
+      <quantita>1</quantita>
+      <prezzo>45.65</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Tastiera intel pro Max</nome>
+      <quantita>1</quantita>
+      <prezzo>22</prezzo>
     </prodotto>
   </ordini>
 </utente>

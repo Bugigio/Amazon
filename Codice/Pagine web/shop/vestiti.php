@@ -24,9 +24,9 @@
                 }
                 echo ");</script>";
             }
-            if(isset($_REQUEST['success'])) { // gestione errori
+            if(isset($_REQUEST['success'])) { // stampa successo
                 echo "<script>alert(";
-                switch($_REQUEST['err']) {
+                switch($_REQUEST['success']) {
                     case 1:
                         echo "'Ordine completato con successo'";
                         break;
