@@ -58,9 +58,9 @@
                     ?>
                     <div class="articolo" >
                         <h3 style='margin: 0 auto'><?php echo $p->getElementsByTagName("nome")->item(0)->nodeValue; ?></h3>
-                        <p><?php echo $p->getElementsByTagName("prezzo")->item(0)->nodeValue; ?></p>
-                        <p><?php echo $p->getElementsByTagName("quantita")->item(0)->nodeValue; ?></p>
-                        <a href="annullaOrdine.php?user=<?php echo $_REQUEST['user'];?>&articolo=<?php echo $i;?>"><input type="button" value="AnnullaOrdine" style='margin-bottom:15px;'></a>
+                        <p><?php echo $p->getElementsByTagName("prezzo")->item(0)->nodeValue; ?> €</p>
+                        <p><?php echo $p->getElementsByTagName("quantita")->item(0)->nodeValue; ?> pezzi</p>
+                        <a href="annullaOrdine.php?user=<?php echo $_REQUEST['user'];?>&articolo=<?php echo $i;?>"><input type="button" value="Annulla ordine" style='margin-bottom:15px;'></a>
                     </div>
                     <?php
                     $i++;
