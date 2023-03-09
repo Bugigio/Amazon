@@ -2,7 +2,7 @@
 Recreating an e-commerce similar to amazon
 Team duo: Lorenzo Barattin, Gabriele Tommasi
 
-  # Pages
+ # Pages
 Going into the folder "Pagine web" you will find all the php pages that were created in this project (also one file JS):
 - account.php: is the page were you can see your orders, cancel them and recharge your credit;
 - annullaOrdine.php: it's a page where there is only PHP to cancel an order;
@@ -13,4 +13,4 @@ Going into the folder "Pagine web" you will find all the php pages that were cre
 - registrati.php: it allows you to register a new account;
 - registrazione.php: only the php code to create a new file XML for the new account you just created and add a new account in the utenti.xml file;
 - shop folder: contains all the pages for each category of products and also the page ordina.php:
-- - ciao
+-- ciao
