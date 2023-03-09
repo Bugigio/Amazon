@@ -40,7 +40,7 @@
         <form name=login action=autenticazione.php method=post>
             <h1>Login</h1>
             <input type=text name=user placeholder="Nome utente" required/>
-            <input type=password name=password placeholder="password" required/>
+            <input type=password name=password placeholder="Password" required/>
             <input type=submit name=login value=Login />
         </form>
         <div class=registrati>Non sei registrato? <a href=registrati.php>Registrati</a></div>
