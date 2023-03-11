@@ -26,8 +26,7 @@ Going into the folder "Stili" you will find all the css pages we created for the
 - account.css: linked to account.php;
 - cambiaPassword.css: linked to cambiaPassword.php;
 - shop.css: linked to (film, libri, sport, tecnologia, vestiti).php;
-- styleLogin.css: linked to login.php;
-- styleRegistrati: linked to registrati.php;
+- styleLR.css: linked to login.php;
 
 You may notice that these css are similar to each other except for the shop.css and account.css ones. In fact we asked chat GPT for help and then we modified some colors and other things.
 
