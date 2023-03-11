@@ -45,7 +45,7 @@
             $tagCategoria = $doc->getElementsByTagName($categoria);
         ?>
     </head>
-    <body style="margin: 0px;" background="https://lezionicomputergrafica.altervista.org/blog/wp-content/uploads/2017/09/Schermata-2017-09-06-alle-09.29.04-e1504683049637-520x245.png">
+    <body style="margin: 0px;">
         <header>
             <div class="header" >
                 <div class="sezione"><a href="#">LIBRI</a></div>

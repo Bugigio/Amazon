@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(206, 204, 204);
 }
 .header {
     background-color: #333333;
@@ -33,7 +34,10 @@ a {
 }
 #img_account {
     width: 196px;
-    height: 128px;
+    height: 168px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 30%;
 }
 .account_container {
     display: flex;
@@ -51,15 +55,31 @@ a {
 /* fine prova */
 
 .ordini_container {
+    padding-top: 30px;
     border-color: black;
+    display: flex;
+    flex-direction: row;
 }
 
 .articolo {
-    margin-top: 5px;
-    margin-left: 10px;
+    background-color: #333333;
+    color: white;
+    margin: 5px;
     border: 2px solid black;
     width: 25%;
     border-radius: 5px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px #333333;
+    transition: box-shadow 0.5s ease 0s;
+}
+.articolo:hover {
+    box-shadow: 0px 5px 30px 0px #333333;
+}
+
+input[type="button"], [type="submit"] {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
 }
 

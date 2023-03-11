@@ -42,7 +42,7 @@
         <div class="account_container">
             <div id="immagine_utente"><img id="img_account" src="https://cdn.calciomercato.com/images/2019-05/Whatsapp.senza.immagine.2019.460x340.jpg" alt=""></div>
             <div id="descrizione_utente">
-                <h3><?php echo $account->getElementsByTagName("nome")->item(0)->nodeValue;?></h3> <a href="login.php"><input type="button" value="Disconnettiti"></a>
+                <h3>Nome utente: <?php echo $account->getElementsByTagName("nome")->item(0)->nodeValue;?></h3> <a href="login.php"><input type="button" value="Disconnettiti"></a>
                 <h4>Saldo: <?php echo $account->getElementsByTagName('saldo')->item(0)->nodeValue;?> €</h4>
                 <form action="<?php echo $_SERVER['PHP_SELF'];?>?user=<?php echo $_REQUEST['user'];?>" method="post">
                     <input type="number" name="credito_da_ricaricare" min="0" max="1000" required>
