@@ -4,34 +4,34 @@
     <prodotto>
       <nome>La vita di Arbucci</nome>
       <prezzo>11.69</prezzo>
-      <quantita>6</quantita>
+      <quantita>5</quantita>
     </prodotto>
     <prodotto>
       <nome>Linguaggi di programmazione</nome>
       <prezzo>15.30</prezzo>
-      <quantita>13</quantita>
+      <quantita>12</quantita>
     </prodotto>
     <prodotto>
       <nome>Idee per il business</nome>
       <prezzo>17.25</prezzo>
-      <quantita>67</quantita>
+      <quantita>66</quantita>
     </prodotto>
     <prodotto>
       <nome>Minecraft: guida</nome>
       <prezzo>11.50</prezzo>
-      <quantita>23</quantita>
+      <quantita>22</quantita>
     </prodotto>
     <prodotto>
       <nome>La caduta di Amazon</nome>
       <prezzo>18.99</prezzo>
-      <quantita>89</quantita>
+      <quantita>88</quantita>
     </prodotto>
   </libri>
   <tecnologia>
     <prodotto>
       <nome>Tastiera intel pro Max</nome>
       <prezzo>22.00</prezzo>
-      <quantita>2</quantita>
+      <quantita>3</quantita>
     </prodotto>
     <prodotto>
       <nome>Monitor Samsung 25 pollici</nome>

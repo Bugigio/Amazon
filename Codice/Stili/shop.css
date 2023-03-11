@@ -97,6 +97,10 @@ a {
     text-decoration: none;
 }
 
+.descrizione_articolo input {
+    font-size: 14px;
+}
+
 .footer {
     background-color: #333333;
     padding: 10px;

@@ -3,7 +3,7 @@
   <dati>
     <nome>admin</nome>
     <password>admin</password>
-    <saldo>990.6</saldo>
+    <saldo>937.87</saldo>
   </dati>
   <ordini>
     <prodotto>
@@ -27,9 +27,29 @@
       <prezzo>45.65</prezzo>
     </prodotto>
     <prodotto>
-      <nome>Tastiera intel pro Max</nome>
+      <nome>La vita di Arbucci</nome>
       <quantita>1</quantita>
-      <prezzo>22</prezzo>
+      <prezzo>11.69</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Linguaggi di programmazione</nome>
+      <quantita>1</quantita>
+      <prezzo>15.3</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Idee per il business</nome>
+      <quantita>1</quantita>
+      <prezzo>17.25</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>Minecraft: guida</nome>
+      <quantita>1</quantita>
+      <prezzo>11.5</prezzo>
+    </prodotto>
+    <prodotto>
+      <nome>La caduta di Amazon</nome>
+      <quantita>1</quantita>
+      <prezzo>18.99</prezzo>
     </prodotto>
   </ordini>
 </utente>

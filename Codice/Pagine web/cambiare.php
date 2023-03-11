@@ -9,12 +9,16 @@
 
         // ricerca file "username".xml
         $usernameXML = new DOMDocument();
-        try {
-            $usernameXML->load("../XML/utenti/$user.xml");
-        } catch (\Throwable $th) {
+        if(!$usernameXML->load("../XML/utenti/$user.xml")) {
             header("location: cambiaPassword.php?err=1&user=$user");
             die();
         }
+        // try {
+        //     $usernameXML->load("../XML/utenti/$user.xml");
+        // } catch (DOMException $e) {
+        //     header("location: cambiaPassword.php?err=1&user=$user");
+        //     die();
+        // }
         // controllo password
         if($passwordNuova == $confermaPassword) {
             $doc = new DOMDocument();

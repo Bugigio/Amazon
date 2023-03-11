@@ -14,11 +14,11 @@
   /* Stile del titolo */
   h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
   
-  /* Stile del form di registrazione */
+  /* Stile del form di login */
   form {
     max-width: 400px;
     margin: 0 auto;
@@ -46,17 +46,17 @@
     background-color: #4caf50;
     color: #fff;
     cursor: pointer;
+    transition: background-color 0.5s ease 0s;
   }
   
   input[type="submit"]:hover {
     background-color: #3e8e41;
   }
   
-  /* Stile del link per il login */
+  /* Stile del link per la registrazione */
   .registrati {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
   }
   
   .registrati a {
@@ -65,6 +65,16 @@
   }
   
   .registrati a:hover {
+    text-decoration: underline;
+  }
+
+  /* stile del link per cambio password */
+  .err a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .err a:hover {
     text-decoration: underline;
   }
   
@@ -77,5 +87,5 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
-    font-size: 14px;
+    text-align: center;
   }
