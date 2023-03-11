@@ -77,6 +77,8 @@ img {
 .sezione {
     width: auto;
     padding: 10px;
+    background-color: #333333;
+    transition: background-color 0.3s;
 }
 .sezione:hover {
     background-color: #242424;
@@ -88,6 +90,7 @@ img {
     align-items: center;
     margin-left: auto;
     padding: 10px;
+    transition: background-color 0.3s;
 }
 #pulsante_account:hover {
     background-color: #242424;
